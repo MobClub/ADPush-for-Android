@@ -1,0 +1,2 @@
+include ':AdPushSDKDemo'
+rootProject.name = "adpush"
