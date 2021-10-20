@@ -2,7 +2,4 @@
 .gradle
 AdPushSDKDemo/.idea
 AdPushSDKDemo/build
-AdPushSDK/build
-local.properties
 build
-outputs
