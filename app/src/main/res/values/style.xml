@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="notice_dialog_anim">
+        <item name="android:windowEnterAnimation">@anim/down</item>
+        <item name="android:windowExitAnimation">@anim/up</item>
+    </style>
+
+    <style name="icon_anim">
+        <item name="android:windowEnterAnimation">@anim/icon_show</item>
+        <item name="android:windowExitAnimation">@anim/icon_hide</item>
+    </style>
+</resources>

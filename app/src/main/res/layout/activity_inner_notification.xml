@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InnerNotificationActivity">
+
+    <EditText
+        android:id="@+id/slot_notification_etv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:hint="请输入广告位" />
+
+    <Button
+        android:id="@+id/request_notification_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取应用内推送广告" />
+
+    <Button
+        android:id="@+id/close_notifiload_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭应用内推送广告Loader"
+        android:textAllCaps="false" />
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".IconActivity">
+
+        <EditText
+            android:id="@+id/position_y_etv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入广告展示位置(距离屏幕顶部位置)"
+            android:visibility="gone" />
+
+
+        <EditText
+            android:id="@+id/slot_etv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:hint="请输入广告位" />
+
+        <Button
+            android:id="@+id/request_ad_render_by_sdk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取浮标广告"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/request_ad_render_by_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取icon广告" />
+
+        <Button
+            android:id="@+id/ficon_hide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="浮标广告隐藏"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/ficon_popout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="浮标广告弹出"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/jump_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="跳转测试页面1" />
+
+        <Button
+            android:id="@+id/icon_destory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关闭icon广告Loader"
+            android:textAllCaps="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/test_act_b"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_icon_w"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="宽度 单位像素"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/but_icon_w"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="设置icon宽度" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/test_act_b"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_icon_h"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="高度 单位像素"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/but_icon_h"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="设置icon高度" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rad_gp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_ra"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="RelativeLayout" />
+
+            <RadioButton
+                android:id="@+id/rb_li"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LinearLayout" />
+
+            <RadioButton
+                android:id="@+id/rb_fa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="FrameLayout" />
+        </RadioGroup>
+
+
+        <RelativeLayout
+            android:id="@+id/ra_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/la_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <FrameLayout
+            android:id="@+id/fa_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="800dp" />
+    </LinearLayout>
+</ScrollView>

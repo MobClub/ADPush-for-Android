@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".IconActivity">
+
+        <EditText
+            android:id="@+id/position_y_etv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入广告展示位置(距离屏幕顶部位置)" />
+
+        <EditText
+            android:id="@+id/position_x_etv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入广告展示位置(距离屏幕两边)" />
+
+
+        <EditText
+            android:id="@+id/slot_etv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:hint="请输入广告位" />
+
+        <Button
+            android:id="@+id/request_ad_render_by_sdk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取浮标广告" />
+
+        <Button
+            android:id="@+id/request_ad_render_by_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取icon广告"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/ficon_hide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="浮标广告隐藏80%" />
+
+        <Button
+            android:id="@+id/ficon_popout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="浮标广告弹出80%" />
+
+        <Button
+            android:id="@+id/ficon_gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="浮标广告完全隐藏" />
+
+        <Button
+            android:id="@+id/ficon_visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="浮标广告全部展示" />
+
+        <Button
+            android:id="@+id/jump_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="跳转测试页面1" />
+
+        <Button
+            android:id="@+id/float_destory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关闭浮标广告Loader" />
+
+        <Button
+            android:id="@+id/fi_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设置浮标位于屏幕左侧" />
+
+        <Button
+            android:id="@+id/fi_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设置浮标位于屏幕右侧" />
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="800dp" />
+    </LinearLayout>
+</ScrollView>

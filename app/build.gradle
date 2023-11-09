@@ -1,0 +1,54 @@
+plugins {
+	id 'com.android.application'
+	id 'com.mob.sdk'
+}
+android {
+	compileSdkVersion 33
+	ndkVersion "16.1.4479499"
+
+	defaultConfig {
+		applicationId "com.mob.mobad.demo"
+		minSdkVersion 19
+		targetSdkVersion 33
+		versionCode 1
+		versionName "2.3.2"
+	}
+
+	signingConfigs {
+		release {
+			keyAlias 'demokey.keystore'
+			keyPassword '123456'
+			storeFile file('../app/demokey.keystore')
+			storePassword '123456'
+		}
+	}
+
+	buildTypes {
+		debug {
+			signingConfig signingConfigs.release
+			minifyEnabled false
+			proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+		}
+		release {
+			signingConfig signingConfigs.release
+			minifyEnabled false
+			proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+		}
+	}
+	compileOptions {
+		sourceCompatibility JavaVersion.VERSION_1_8
+		targetCompatibility JavaVersion.VERSION_1_8
+	}
+}
+MobSDK {
+	appKey "2dbe655e88c80"
+	appSecret "a7b9f1918c596eacbff8a172ba8ed158"
+	spEdition 'IZNAO'
+	MobAd {
+		appId "1666010571874422786"
+	}
+}
+dependencies {
+	implementation fileTree(dir: 'libs', includes: ['*.aar', '*.jar'])
+	implementation 'com.tencent.mm.opensdk:wechat-sdk-android:+'
+}

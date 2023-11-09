@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/request_gps_permissions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="申请定位权限" />
+
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/sbmitT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/request_gps_permissions"
+        android:text="同意隐私" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/sbmitF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sbmitT"
+        android:text="不同意隐私" />
+
+    <Button
+        android:id="@+id/init_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sbmitF"
+        android:text="初始化"
+        android:visibility="gone" />
+
+    <Button
+
+        android:id="@+id/icon_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/init_btn"
+        android:text="icon广告" />
+
+    <Button
+
+        android:id="@+id/float_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_btn"
+        android:text="Float广告" />
+
+    <Button
+        android:id="@+id/inner_notification_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/float_btn"
+        android:text="应用内推送广告" />
+
+    <Button
+        android:id="@+id/splash_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inner_notification_btn"
+        android:text="开屏广告" />
+
+    <Button
+        android:id="@+id/test_act_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_btn"
+        android:text="测试页面1" />
+
+    <Button
+        android:id="@+id/test_act_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test_act_a"
+        android:text="测试页面2" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_pg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/test_act_b"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_mianpage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="首页地址" />
+
+        <Button
+            android:id="@+id/but_mianpage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="设置首页" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/la_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_pg"
+        android:orientation="horizontal" />
+
+</RelativeLayout>
